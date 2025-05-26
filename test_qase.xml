@@ -1,0 +1,614 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nodes>
+  <suites>
+    <node>
+      <id>1</id>
+      <title>Вкладка поиск</title>
+      <cases>
+        <node>
+          <title>Успешное вступление в команду через выбор из списка предложений</title>
+          <description>Проверяет, что игрок может присоединиться к команде, выбрав её из списка доступных предложений.</description>
+          <preconditions>* Игрок находится на вкладке Search.
+* В списке предложены доступные команды.</preconditions>
+          <postconditions></postconditions>
+          <priority>high</priority>
+          <severity>normal</severity>
+          <type>other</type>
+          <behavior>undefined</behavior>
+          <automation>is-not-automated</automation>
+          <status>draft</status>
+          <is_flaky>no</is_flaky>
+          <layer>unknown</layer>
+          <milestone></milestone>
+          <custom_fields>
+            <node>
+              <id>1</id>
+              <internal_id>1</internal_id>
+              <title>Platform</title>
+              <type>6</type>
+              <value>
+                <node>iOS</node>
+                <node>Gplay</node>
+                <node>Windows</node>
+                <node>Web</node>
+                <node>Mac</node>
+              </value>
+            </node>
+            <node>
+              <id>108</id>
+              <internal_id>108</internal_id>
+              <title>TS. Type</title>
+              <type>6</type>
+              <value>
+                <node>Regress</node>
+                <node>Happy Path</node>
+              </value>
+            </node>
+            <node>
+              <id>109</id>
+              <internal_id>109</internal_id>
+              <title>TS. Team</title>
+              <type>3</type>
+              <value>
+                <node>Feature Team - 2</node>
+              </value>
+            </node>
+          </custom_fields>
+          <steps_type>classic</steps_type>
+          <steps>
+            <node>
+              <position>1</position>
+              <action>Открыть вкладку Search.</action>
+              <expected_result>Вкладка Search открыта.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>2</position>
+              <action>Выбрать любую доступную команду в списке.</action>
+              <expected_result>Команда выделена.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>3</position>
+              <action>Нажать кнопку Join напротив команды.</action>
+              <expected_result>Игрок вступил в команду, отображается сообщение об успехе.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+          </steps>
+          <expected_result>* Игрок успешно вступает в выбранную команду и видит её в своём профиле.</expected_result>
+          <priority>high</priority>
+          <severity>normal</severity>
+        </node>
+        <node>
+          <title>Успешный поиск и вступление в команду по названию</title>
+          <description>Проверяет, что игрок может найти команду по названию и присоединиться к ней.</description>
+          <preconditions>* Игрок находится на вкладке Search.
+* Известно точное название команды.</preconditions>
+          <postconditions></postconditions>
+          <priority>high</priority>
+          <severity>normal</severity>
+          <type>other</type>
+          <behavior>undefined</behavior>
+          <automation>is-not-automated</automation>
+          <status>draft</status>
+          <is_flaky>no</is_flaky>
+          <layer>unknown</layer>
+          <milestone></milestone>
+          <custom_fields>
+            <node>
+              <id>1</id>
+              <internal_id>1</internal_id>
+              <title>Platform</title>
+              <type>6</type>
+              <value>
+                <node>iOS</node>
+                <node>Gplay</node>
+                <node>Windows</node>
+                <node>Web</node>
+                <node>Mac</node>
+              </value>
+            </node>
+            <node>
+              <id>108</id>
+              <internal_id>108</internal_id>
+              <title>TS. Type</title>
+              <type>6</type>
+              <value>
+                <node>Regress</node>
+                <node>Happy Path</node>
+              </value>
+            </node>
+            <node>
+              <id>109</id>
+              <internal_id>109</internal_id>
+              <title>TS. Team</title>
+              <type>3</type>
+              <value>
+                <node>Feature Team - 2</node>
+              </value>
+            </node>
+          </custom_fields>
+          <steps_type>classic</steps_type>
+          <steps>
+            <node>
+              <position>1</position>
+              <action>Открыть вкладку Search.</action>
+              <expected_result>Вкладка Search открыта.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>2</position>
+              <action>Ввести точное название команды в строку поиска и нажать Search.</action>
+              <expected_result>Команда найдена.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>3</position>
+              <action>Нажать кнопку Join рядом с командой.</action>
+              <expected_result>Игрок вступил в команду.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+          </steps>
+          <expected_result>* Игрок успешно вступает в команду и видит её в списке My Teams.</expected_result>
+          <priority>high</priority>
+          <severity>normal</severity>
+        </node>
+        <node>
+          <title>Успешное принятие приглашения в команду через панель чата</title>
+          <description>Проверяет, что игрок может принять приглашение в команду из панели чата.</description>
+          <preconditions>* В панели чата есть приглашение от лидера команды.</preconditions>
+          <postconditions></postconditions>
+          <priority>high</priority>
+          <severity>normal</severity>
+          <type>other</type>
+          <behavior>undefined</behavior>
+          <automation>is-not-automated</automation>
+          <status>draft</status>
+          <is_flaky>no</is_flaky>
+          <layer>unknown</layer>
+          <milestone></milestone>
+          <custom_fields>
+            <node>
+              <id>1</id>
+              <internal_id>1</internal_id>
+              <title>Platform</title>
+              <type>6</type>
+              <value>
+                <node>iOS</node>
+                <node>Gplay</node>
+                <node>Windows</node>
+                <node>Web</node>
+                <node>Mac</node>
+              </value>
+            </node>
+            <node>
+              <id>108</id>
+              <internal_id>108</internal_id>
+              <title>TS. Type</title>
+              <type>6</type>
+              <value>
+                <node>Regress</node>
+                <node>Happy Path</node>
+              </value>
+            </node>
+            <node>
+              <id>109</id>
+              <internal_id>109</internal_id>
+              <title>TS. Team</title>
+              <type>3</type>
+              <value>
+                <node>Feature Team - 2</node>
+              </value>
+            </node>
+          </custom_fields>
+          <steps_type>classic</steps_type>
+          <steps>
+            <node>
+              <position>1</position>
+              <action>Открыть панель чата.</action>
+              <expected_result>Чат открыт.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>2</position>
+              <action>Найти сообщение-приглашение и нажать кнопку Accept.</action>
+              <expected_result>Появляется подтверждение о вступлении в команду.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+          </steps>
+          <expected_result>* Игрок принимает приглашение и вступает в команду.</expected_result>
+          <priority>high</priority>
+          <severity>normal</severity>
+        </node>
+        <node>
+          <title>Ошибка при попытке создать команду с уже занятым именем</title>
+          <description>Проверяет, что игрок не может создать команду с уже занятым названием.</description>
+          <preconditions>* Игрок находится на вкладке Create.
+* Название команды уже существует.</preconditions>
+          <postconditions></postconditions>
+          <priority>medium</priority>
+          <severity>normal</severity>
+          <type>other</type>
+          <behavior>undefined</behavior>
+          <automation>is-not-automated</automation>
+          <status>draft</status>
+          <is_flaky>no</is_flaky>
+          <layer>unknown</layer>
+          <milestone></milestone>
+          <custom_fields>
+            <node>
+              <id>1</id>
+              <internal_id>1</internal_id>
+              <title>Platform</title>
+              <type>6</type>
+              <value>
+                <node>iOS</node>
+                <node>Gplay</node>
+                <node>Windows</node>
+                <node>Web</node>
+                <node>Mac</node>
+              </value>
+            </node>
+            <node>
+              <id>108</id>
+              <internal_id>108</internal_id>
+              <title>TS. Type</title>
+              <type>6</type>
+              <value>
+                <node>Regress</node>
+                <node>Happy Path</node>
+              </value>
+            </node>
+            <node>
+              <id>109</id>
+              <internal_id>109</internal_id>
+              <title>TS. Team</title>
+              <type>3</type>
+              <value>
+                <node>Feature Team - 2</node>
+              </value>
+            </node>
+          </custom_fields>
+          <steps_type>classic</steps_type>
+          <steps>
+            <node>
+              <position>1</position>
+              <action>Открыть вкладку Create.</action>
+              <expected_result>Форма создания команды открыта.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>2</position>
+              <action>Ввести занятое название команды.</action>
+              <expected_result>Название введено.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>3</position>
+              <action>Нажать кнопку Create.</action>
+              <expected_result>Отображается сообщение об ошибке 'Team name already taken'.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+          </steps>
+          <expected_result>* Отображается ошибка, команда не создается.</expected_result>
+          <priority>medium</priority>
+          <severity>normal</severity>
+        </node>
+        <node>
+          <title>Невозможность вступления через список при отсутствии открытых команд</title>
+          <description>Проверяет, что игрок не может вступить в команду, если список предложений пуст.</description>
+          <preconditions>* Вкладка Search открыта.
+* Список предложенных команд пуст.</preconditions>
+          <postconditions></postconditions>
+          <priority>medium</priority>
+          <severity>normal</severity>
+          <type>other</type>
+          <behavior>undefined</behavior>
+          <automation>is-not-automated</automation>
+          <status>draft</status>
+          <is_flaky>no</is_flaky>
+          <layer>unknown</layer>
+          <milestone></milestone>
+          <custom_fields>
+            <node>
+              <id>1</id>
+              <internal_id>1</internal_id>
+              <title>Platform</title>
+              <type>6</type>
+              <value>
+                <node>iOS</node>
+                <node>Gplay</node>
+                <node>Windows</node>
+                <node>Web</node>
+                <node>Mac</node>
+              </value>
+            </node>
+            <node>
+              <id>108</id>
+              <internal_id>108</internal_id>
+              <title>TS. Type</title>
+              <type>6</type>
+              <value>
+                <node>Regress</node>
+                <node>Happy Path</node>
+              </value>
+            </node>
+            <node>
+              <id>109</id>
+              <internal_id>109</internal_id>
+              <title>TS. Team</title>
+              <type>3</type>
+              <value>
+                <node>Feature Team - 2</node>
+              </value>
+            </node>
+          </custom_fields>
+          <steps_type>classic</steps_type>
+          <steps>
+            <node>
+              <position>1</position>
+              <action>Открыть вкладку Search.</action>
+              <expected_result>Вкладка открыта.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>2</position>
+              <action>Проверить, отображаются ли команды в списке.</action>
+              <expected_result>Список пуст.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>3</position>
+              <action>Попробовать нажать Join напротив несуществующей команды.</action>
+              <expected_result>Кнопка неактивна, действия невозможны.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+          </steps>
+          <expected_result>* Кнопка Join недоступна.
+* Отображается сообщение 'No open teams available'.</expected_result>
+          <priority>medium</priority>
+          <severity>normal</severity>
+        </node>
+        <node>
+          <title>Невозможность поиска команды по неправильному названию</title>
+          <description>Проверяет, что при вводе несуществующего названия команды ничего не находится.</description>
+          <preconditions>* Вкладка Search открыта.</preconditions>
+          <postconditions></postconditions>
+          <priority>medium</priority>
+          <severity>normal</severity>
+          <type>other</type>
+          <behavior>undefined</behavior>
+          <automation>is-not-automated</automation>
+          <status>draft</status>
+          <is_flaky>no</is_flaky>
+          <layer>unknown</layer>
+          <milestone></milestone>
+          <custom_fields>
+            <node>
+              <id>1</id>
+              <internal_id>1</internal_id>
+              <title>Platform</title>
+              <type>6</type>
+              <value>
+                <node>iOS</node>
+                <node>Gplay</node>
+                <node>Windows</node>
+                <node>Web</node>
+                <node>Mac</node>
+              </value>
+            </node>
+            <node>
+              <id>108</id>
+              <internal_id>108</internal_id>
+              <title>TS. Type</title>
+              <type>6</type>
+              <value>
+                <node>Regress</node>
+                <node>Happy Path</node>
+              </value>
+            </node>
+            <node>
+              <id>109</id>
+              <internal_id>109</internal_id>
+              <title>TS. Team</title>
+              <type>3</type>
+              <value>
+                <node>Feature Team - 2</node>
+              </value>
+            </node>
+          </custom_fields>
+          <steps_type>classic</steps_type>
+          <steps>
+            <node>
+              <position>1</position>
+              <action>Открыть вкладку Search.</action>
+              <expected_result>Вкладка открыта.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>2</position>
+              <action>Ввести несуществующее название, например 'NoTeamXYZ', и нажать Search.</action>
+              <expected_result>Поиск выполнен.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>3</position>
+              <action>Проверить результат поиска.</action>
+              <expected_result>Отображается сообщение об отсутствии результатов.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+          </steps>
+          <expected_result>* Результатов поиска нет.
+* Отображается сообщение 'No teams found matching [name]'.</expected_result>
+          <priority>medium</priority>
+          <severity>normal</severity>
+        </node>
+        <node>
+          <title>Отклонение приглашения в команду через панель чата</title>
+          <description>Проверяет, что игрок может отклонить приглашение и не вступить в команду.</description>
+          <preconditions>* В чате есть активное приглашение в команду.</preconditions>
+          <postconditions></postconditions>
+          <priority>medium</priority>
+          <severity>normal</severity>
+          <type>other</type>
+          <behavior>undefined</behavior>
+          <automation>is-not-automated</automation>
+          <status>draft</status>
+          <is_flaky>no</is_flaky>
+          <layer>unknown</layer>
+          <milestone></milestone>
+          <custom_fields>
+            <node>
+              <id>1</id>
+              <internal_id>1</internal_id>
+              <title>Platform</title>
+              <type>6</type>
+              <value>
+                <node>iOS</node>
+                <node>Gplay</node>
+                <node>Windows</node>
+                <node>Web</node>
+                <node>Mac</node>
+              </value>
+            </node>
+            <node>
+              <id>108</id>
+              <internal_id>108</internal_id>
+              <title>TS. Type</title>
+              <type>6</type>
+              <value>
+                <node>Regress</node>
+                <node>Happy Path</node>
+              </value>
+            </node>
+            <node>
+              <id>109</id>
+              <internal_id>109</internal_id>
+              <title>TS. Team</title>
+              <type>3</type>
+              <value>
+                <node>Feature Team - 2</node>
+              </value>
+            </node>
+          </custom_fields>
+          <steps_type>classic</steps_type>
+          <steps>
+            <node>
+              <position>1</position>
+              <action>Открыть чат.</action>
+              <expected_result>Чат открыт.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>2</position>
+              <action>Найти приглашение и нажать Decline.</action>
+              <expected_result>Приглашение скрывается, отображается статус Declined.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+          </steps>
+          <expected_result>* Приглашение помечается как отклонённое.
+* Игрок не присоединяется к команде.</expected_result>
+          <priority>medium</priority>
+          <severity>normal</severity>
+        </node>
+        <node>
+          <title>Успешное создание и автоматическое вступление в новую команду</title>
+          <description>Проверяет, что игрок может создать новую команду с уникальным именем и автоматически в неё вступает.</description>
+          <preconditions>* Вкладка Create открыта.
+* Введено уникальное название команды.</preconditions>
+          <postconditions></postconditions>
+          <priority>high</priority>
+          <severity>normal</severity>
+          <type>other</type>
+          <behavior>undefined</behavior>
+          <automation>is-not-automated</automation>
+          <status>draft</status>
+          <is_flaky>no</is_flaky>
+          <layer>unknown</layer>
+          <milestone></milestone>
+          <custom_fields>
+            <node>
+              <id>1</id>
+              <internal_id>1</internal_id>
+              <title>Platform</title>
+              <type>6</type>
+              <value>
+                <node>iOS</node>
+                <node>Gplay</node>
+                <node>Windows</node>
+                <node>Web</node>
+                <node>Mac</node>
+              </value>
+            </node>
+            <node>
+              <id>108</id>
+              <internal_id>108</internal_id>
+              <title>TS. Type</title>
+              <type>6</type>
+              <value>
+                <node>Regress</node>
+                <node>Happy Path</node>
+              </value>
+            </node>
+            <node>
+              <id>109</id>
+              <internal_id>109</internal_id>
+              <title>TS. Team</title>
+              <type>3</type>
+              <value>
+                <node>Feature Team - 2</node>
+              </value>
+            </node>
+          </custom_fields>
+          <steps_type>classic</steps_type>
+          <steps>
+            <node>
+              <position>1</position>
+              <action>Открыть вкладку Create.</action>
+              <expected_result>Вкладка Create открыта.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>2</position>
+              <action>Ввести уникальное название команды и описание.</action>
+              <expected_result>Поля заполнены.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>3</position>
+              <action>Нажать Create.</action>
+              <expected_result>Появляется сообщение об успешном создании, игрок автоматически в команде.</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+          </steps>
+          <expected_result>* Команда создаётся.
+* Игрок вступает в неё автоматически.</expected_result>
+          <priority>high</priority>
+          <severity>normal</severity>
+        </node>
+      </cases>
+    </node>
+  </suites>
+</nodes>
