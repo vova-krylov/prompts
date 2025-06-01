@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nodes>
+  <suites>
+    <node>
+      <id>1</id>
+      <title>Вкладка поиск</title>
+      <cases>
+        <node>
+          <title>Прогресс заданий изменяется и соответствует её выполнению </title>
+          <description></description>
+          <preconditions>Подгрузить сохранку со 100+ уровнем матч-3 событие должно быть доступно в календаре </preconditions>
+          <postconditions></postconditions>
+          <priority>high</priority>
+          <severity>normal</severity>
+          <type>other</type>
+          <behavior>undefined</behavior>
+          <automation>is-not-automated</automation>
+          <status>draft</status>
+          <is_flaky>no</is_flaky>
+          <layer>unknown</layer>
+          <milestone></milestone>
+          <custom_fields>
+            <node>
+              <id>1</id>
+              <internal_id>1</internal_id>
+              <title>Platform</title>
+              <type>6</type>
+              <value>
+                <node>iOS</node>
+                <node>Gplay</node>
+                <node>Windows</node>
+                <node>Web</node>
+                <node>Mac</node>
+              </value>
+            </node>
+            <node>
+              <id>108</id>
+              <internal_id>108</internal_id>
+              <title>TS. Type</title>
+              <type>6</type>
+              <value>
+                <node>Regress</node>
+                <node>Happy Path</node>
+              </value>
+            </node>
+            <node>
+              <id>109</id>
+              <internal_id>109</internal_id>
+              <title>TS. Team</title>
+              <type>3</type>
+              <value>
+                <node>Feature Team - 2</node>
+              </value>
+            </node>
+          </custom_fields>
+          <steps_type>classic</steps_type>
+          <steps>
+            <node>
+              <position>1</position>
+              <action>Запустить игру и дождаться появления события Mayor's Duties </action>
+              <expected_result></expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>2</position>
+              <action>Выбрать любую доступную команду в списке.</action>
+              <expected_result>Открыть окно задания и выбрать любое активное задание </expected_result>
+              <data></data>
+              <steps/>
+            </node>
+            <node>
+              <position>3</position>
+              <action>Выполнить действия, необходимые для для получения прогресса </action>
+              <expected_result>Прогресс начисляется</expected_result>
+              <data></data>
+              <steps/>
+            </node>
+          </steps>
+          <expected_result></expected_result>
+          <priority>high</priority>
+          <severity>normal</severity>
+        </node>
+        <node>
+        </node>
+      </cases>
+    </node>
+  </suites>
+</nodes>
